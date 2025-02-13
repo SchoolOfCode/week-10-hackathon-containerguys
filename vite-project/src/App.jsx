@@ -87,16 +87,18 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
       {showElement ? (
-        <Meals
-          breakfast={breakfast}
-          handleBreakfast={handleBreakfast}
-          lunch={lunch}
-          handleLunch={handleLunch}
-          dinner={dinner}
-          handleDinner={handleDinner}
-        />
+        <>
+          <Header />
+          <Meals
+            breakfast={breakfast}
+            handleBreakfast={handleBreakfast}
+            lunch={lunch}
+            handleLunch={handleLunch}
+            dinner={dinner}
+            handleDinner={handleDinner}
+          />
+        </>
       ) : (
         <ChatBot setShowElement={setShowElement} setFoodPref={setFoodPref} />
       )}
