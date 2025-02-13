@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Meals from "./components/Meals.jsx";
 import ChatBot from "./components/ChatBot.jsx";
+import Header from "./components/Header.jsx";
 import "./App.css";
 
 function App() {
@@ -86,6 +87,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       {showElement ? (
         <Meals
           breakfast={breakfast}
