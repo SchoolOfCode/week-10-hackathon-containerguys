@@ -1,0 +1,5 @@
+#lunch {
+  background-color: #f9f9f9; /* Background color of the box */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}

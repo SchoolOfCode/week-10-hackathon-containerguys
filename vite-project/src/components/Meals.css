@@ -1,0 +1,69 @@
+/* Meals.css */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  width: 400px;
+  height: 200px;
+  justify-content: space-between;
+}
+
+.meal {
+  position: absolute;
+  width: 150px; /* Fixed width for each meal */
+  height: 200px; /* Fixed height for each meal */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 1; /* Default opacity for non-active meals */
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.meal.active {
+  opacity: 1; /* Full opacity for the active (center) meal */
+  transform: scale(1.2); /* Make the active meal bigger */
+  z-index: 2; /* Ensure the active meal is on top */
+}
+
+.meal.prev {
+  transform: translateX(-150px) scale(0.8);
+  opacity: 0.5; /* Lower opacity for the previous meal */
+  z-index: 1; /* Put the previous meal in the background */
+}
+
+.meal.next {
+  transform: translateX(150px) scale(0.8);
+  opacity: 0.5; /* Lower opacity for the next meal */
+  z-index: 1; /* Put the next meal in the background */
+}
+
+.meal-image img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
