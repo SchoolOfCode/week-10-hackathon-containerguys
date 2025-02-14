@@ -2,6 +2,7 @@ import { useState } from "react";
 import Meals from "./components/Meals.jsx";
 import ChatBot from "./components/ChatBot.jsx";
 import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
 import "./App.css";
 
 function App() {
@@ -100,7 +101,10 @@ function App() {
           />
         </>
       ) : (
-        <ChatBot setShowElement={setShowElement} setFoodPref={setFoodPref} />
+        <>
+          <Hero />
+          <ChatBot setShowElement={setShowElement} setFoodPref={setFoodPref} />
+        </>
       )}
     </div>
   );

@@ -44,8 +44,8 @@
 
 .meal.next {
   transform: translateX(110px) scale(0.7);
-  opacity: 0.5; /* Lower opacity for the next meal */
-  z-index: 1; /* Put the next meal in the background */
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .meal-image img {
