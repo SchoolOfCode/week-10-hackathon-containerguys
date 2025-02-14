@@ -67,8 +67,7 @@ function App() {
     console.log(foodPref);
     console.log(`the random food pref is: ${randomFoodPref}`);
     const response = await fetch(
-      `https://www.themealdb.com/api/json/v1/1/filter.php?c=${
-        foodPref[Math.floor(Math.random() * foodPref.length)]
+      `https://www.themealdb.com/api/json/v1/1/filter.php?c=${foodPref[Math.floor(Math.random() * foodPref.length)]
       }`
     );
     const json = await response.json();
