@@ -15,6 +15,13 @@ test("This should pass", async () => {
   expect(response.body).not.toBe(null)
 });
 
+test("This should pass if 200", async () => {
+  const response = await fetch(
+    "https://www.themealdb.com/api/json/v1/1/filter.php?c=Breakfast"
+  );
+  expect(response.status).toBe(200)
+});
+
 
 test("this should always fail", () => {
   const response = "";
