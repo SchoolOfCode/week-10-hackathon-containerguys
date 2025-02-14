@@ -9,17 +9,18 @@
 .carousel {
   position: relative;
   display: flex;
-  width: 400px;
+  width: 340px;
   height: 200px;
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .meal {
   position: absolute;
-  width: 150px; /* Fixed width for each meal */
-  height: 200px; /* Fixed height for each meal */
+  width: 150px;
+  height: 200px;
   transition: transform 0.5s ease, opacity 0.5s ease;
-  opacity: 1; /* Default opacity for non-active meals */
+  opacity: 1;
   cursor: pointer;
   text-align: center;
   display: flex;
@@ -30,19 +31,19 @@
 }
 
 .meal.active {
-  opacity: 1; /* Full opacity for the active (center) meal */
-  transform: scale(1.2); /* Make the active meal bigger */
-  z-index: 2; /* Ensure the active meal is on top */
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
 }
 
 .meal.prev {
-  transform: translateX(-150px) scale(0.8);
-  opacity: 0.5; /* Lower opacity for the previous meal */
-  z-index: 1; /* Put the previous meal in the background */
+  transform: translateX(-90px) scale(0.7);
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .meal.next {
-  transform: translateX(150px) scale(0.8);
+  transform: translateX(110px) scale(0.7);
   opacity: 0.5; /* Lower opacity for the next meal */
   z-index: 1; /* Put the next meal in the background */
 }
