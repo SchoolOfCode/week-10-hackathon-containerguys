@@ -106,7 +106,6 @@ function App() {
       {showElement ? (
         <>
           <Header />
-          <button onClick={() => { throw new Error("This is your first error!"); }}>Break the world</button>;
           <Meals
             breakfast={breakfast}
             handleBreakfast={handleBreakfast}
